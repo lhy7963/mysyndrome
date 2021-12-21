@@ -12,9 +12,7 @@
 		* {font-family: inherit; box-sizing: border-box;}
 		div{transition: all 0.3s;}
 		button{color: white; background-color: #202430;vertical-align: bottom; border:0; width: 5vw; height: 4vh;}
-
-
-
+	
 
 	/* 폰트 */
 		@font-face{font-family: "TheSeasons-BdIt";
@@ -34,9 +32,10 @@
 	.one{height:13vh; display: flex; border-bottom: black solid 2px;}
 	.two{padding-left: 13.9vw; height: 9.3vh; display: flex;align-items: center; border-bottom: black solid 2px;  font-size: 2em}
 
-	.three1{padding-left: 13.9vw;height: 6.7vh; display: flex; margin-top: 5px; margin-bottom: 5px;}
+	.three1{padding-left: 13.9vw;height: 6.7vh; display: flex; margin-top: 0.6vh; margin-bottom:0.6vh; }
 	.three2{padding-left: 13.9vw;height: 42.1vh; display: flex; border-bottom: black solid 2px; }
-.saving{vertical-align: bottom; padding-left: 1vw;padding-top: 35.7vh;}
+#saving{width: 6vw; height: 4vh; background-color: #202430; border:none; color: white;vertical-align: bottom; }
+
 
 	.four{height:29.6vh;   align-items: center; overflow: scroll;}
 	.fourinside{height: 14.4vh; border-bottom: #B4BBD1 solid 2px; background-color: red;}
@@ -71,7 +70,9 @@
 .blue{background: blue;  }
 .yellow{background: yellow;}
 
-.whitebox{background-color: white; width: 53.6vw; padding-left: 1vw; padding-top: 1vw;}
+.whitebox1{background-color: white; width: 53.6vw; height: 6.3vh; padding-left: 1vw; padding-top: 1.5vh; }
+.whitebox2{background-color: white; width: 53.6vw; height: 40.5vh; padding-left: 1vw; padding-top: 1vw; }
+.emptybox{width: 3vw; height: 35vh;}
 
 
 
@@ -86,15 +87,22 @@
 				<div id="one1"></div>
 				<div id="one2"></div>
 			</div>
-			<div class="two">
-				당신의 신드롬을 만들어보세요!
+			<div class="two"><b>
+				당신의 신드롬을 만들어보세요!</b>
 			</div>
 			<div class="three1">
-				<div class="whitebox">신드롬의 제목을 붙여주세요!</div>
+				<input type='text' placeholder="신드롬의 제목을 붙여주세요!"  maxlength="50" style="width:53.6vw ;height: 6.3vh; border:none; padding-left:1vw;">
+				
+
 			</div>
 			<div class="three2">
-				<div class="whitebox">신드롬의 간단한 설명을 적어주세요!</div>
-				<div class="saving"><button>저장하기</button></div>
+				<input type='text' placeholder="신드롬의 간단한 설명을 적어주세요!"  maxlength="200" style="width:53.6vw ;height: 40.5vh; border:none; padding-left:1vw;">
+				<div>
+					<div class=" emptybox"></div>
+					<button onclick="javascript:btn()"> 제출하기 </button>
+					
+				</div>
+				
 			</div>
 			<div class="four">
 				<div class="three">
@@ -132,6 +140,10 @@
 				<div style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/mysyndrome/';"  id="con3">My Syndrome</div>
 			</div>
 		</div>
+
+<script> function btn(){ alert('신드롬이 저장되었습니다! (현재는 저장되지는 않음)'); } </script>
+
+
 			
 	</section>
 		
